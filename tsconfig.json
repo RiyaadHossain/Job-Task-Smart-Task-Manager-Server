@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "module": "nodenext",
+    "target": "esnext",
+    // For nodejs:
+    "lib": ["esnext"],
+    "types": ["node", "express"],
+
+    // Path Aliases
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@configs/*": ["src/configs/*"],
+      "@app/*": ["src/app/*"],
+      "@middlewares/*": ["src/app/middlewares/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@utils/*": ["src/utils/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@shared/*": ["src/shared/*"],
+      "@enums/*": ["src/enums/*"],
+      "@interfaces/*": ["src/interfaces/*"]
+    },
+
+    // Other Outputs
+    "sourceMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["dist", "node_modules", "tests", "scripts"]
+}
